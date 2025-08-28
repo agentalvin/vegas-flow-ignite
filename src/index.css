@@ -15,18 +15,18 @@
     --popover: 0 0% 100%;
     --popover-foreground: 220 13% 18%;
 
-    /* Vegas Business Colors */
-    --primary: 223 87% 42%;  /* Deep Blue #1E40AF */
+    /* Vegas Business Colors - Zen Aesthetic */
+    --primary: 220 9% 46%;  /* Sage Green #6B7280 */
     --primary-foreground: 0 0% 100%;
-    --primary-light: 221 83% 53%;
-    --primary-dark: 224 76% 48%;
+    --primary-light: 220 13% 69%;
+    --primary-dark: 215 25% 27%;
 
-    --secondary: 22 93% 53%;  /* Orange #F97316 */
+    --secondary: 220 13% 18%;  /* Warm Neutral #374151 */
     --secondary-foreground: 0 0% 100%;
-    --secondary-light: 25 95% 53%;
+    --secondary-light: 220 9% 46%;
 
-    --accent: 220 13% 69%;  /* Charcoal Gray */
-    --accent-foreground: 0 0% 100%;
+    --accent: 47 9% 89%;  /* Soft Warm Background */
+    --accent-foreground: 220 13% 18%;
 
     --muted: 220 14% 96%;
     --muted-foreground: 220 9% 46%;
@@ -40,11 +40,11 @@
 
     --radius: 0.75rem;
 
-    /* Custom Design Tokens */
-    --gradient-primary: linear-gradient(135deg, hsl(223 87% 42%), hsl(221 83% 53%));
-    --gradient-secondary: linear-gradient(135deg, hsl(22 93% 53%), hsl(25 95% 53%));
-    --gradient-hero: linear-gradient(135deg, hsl(223 87% 42%), hsl(221 83% 53%), hsl(22 93% 53%));
-    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%), hsl(220 14% 98%));
+    /* Custom Design Tokens - Zen Aesthetic */
+    --gradient-primary: linear-gradient(135deg, hsl(220 9% 46%), hsl(220 13% 69%));
+    --gradient-secondary: linear-gradient(135deg, hsl(220 13% 18%), hsl(215 25% 27%));
+    --gradient-hero: linear-gradient(135deg, hsl(47 9% 89%), hsl(220 14% 96%), hsl(220 9% 46%));
+    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%), hsl(47 9% 89%));
 
     --shadow-soft: 0 4px 6px -1px hsl(220 13% 69% / 0.1), 0 2px 4px -1px hsl(220 13% 69% / 0.06);
     --shadow-medium: 0 10px 15px -3px hsl(220 13% 69% / 0.1), 0 4px 6px -2px hsl(220 13% 69% / 0.05);

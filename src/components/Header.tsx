@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Phone, Menu } from "lucide-react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -22,21 +23,24 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="/" className="text-foreground hover:text-primary transition-smooth font-medium">
+            <Link to="/" className="text-foreground hover:text-primary transition-smooth font-medium">
               Home
-            </a>
-            <a href="/services" className="text-foreground hover:text-primary transition-smooth font-medium">
+            </Link>
+            <Link to="/services" className="text-foreground hover:text-primary transition-smooth font-medium">
               Services
-            </a>
-            <a href="/about" className="text-foreground hover:text-primary transition-smooth font-medium">
+            </Link>
+            <Link to="/about" className="text-foreground hover:text-primary transition-smooth font-medium">
               About
-            </a>
-            <a href="/case-studies" className="text-foreground hover:text-primary transition-smooth font-medium">
+            </Link>
+            <Link to="/case-studies" className="text-foreground hover:text-primary transition-smooth font-medium">
               Case Studies
-            </a>
-            <a href="/contact" className="text-foreground hover:text-primary transition-smooth font-medium">
+            </Link>
+            <Link to="/resources" className="text-foreground hover:text-primary transition-smooth font-medium">
+              Resources
+            </Link>
+            <Link to="/contact" className="text-foreground hover:text-primary transition-smooth font-medium">
               Contact
-            </a>
+            </Link>
           </nav>
 
           {/* CTA Buttons */}
@@ -63,21 +67,24 @@ const Header = () => {
         {isMenuOpen && (
           <div className="md:hidden mt-4 pb-4 border-t">
             <nav className="flex flex-col space-y-4 mt-4">
-              <a href="/" className="text-foreground hover:text-primary transition-smooth font-medium">
+              <Link to="/" className="text-foreground hover:text-primary transition-smooth font-medium">
                 Home
-              </a>
-              <a href="/services" className="text-foreground hover:text-primary transition-smooth font-medium">
+              </Link>
+              <Link to="/services" className="text-foreground hover:text-primary transition-smooth font-medium">
                 Services
-              </a>
-              <a href="/about" className="text-foreground hover:text-primary transition-smooth font-medium">
+              </Link>
+              <Link to="/about" className="text-foreground hover:text-primary transition-smooth font-medium">
                 About
-              </a>
-              <a href="/case-studies" className="text-foreground hover:text-primary transition-smooth font-medium">
+              </Link>
+              <Link to="/case-studies" className="text-foreground hover:text-primary transition-smooth font-medium">
                 Case Studies
-              </a>
-              <a href="/contact" className="text-foreground hover:text-primary transition-smooth font-medium">
+              </Link>
+              <Link to="/resources" className="text-foreground hover:text-primary transition-smooth font-medium">
+                Resources
+              </Link>
+              <Link to="/contact" className="text-foreground hover:text-primary transition-smooth font-medium">
                 Contact
-              </a>
+              </Link>
               <div className="flex flex-col space-y-3 pt-4 border-t">
                 <a href="tel:(702)555-0123" className="flex items-center space-x-2 text-primary">
                   <Phone className="w-4 h-4" />
