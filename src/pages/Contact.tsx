@@ -36,14 +36,14 @@ const Contact = () => {
         <section className="py-16 md:py-24 gradient-subtle">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6">
-                Get Your Free{" "}
-                <span className="text-primary">Automation Audit</span>
-              </h1>
-              <p className="text-xl text-muted-foreground leading-relaxed mb-8">
-                Ready to see how much time and money automation could save your Las Vegas business? 
-                Let's start with a free 30-minute consultation.
-              </p>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6">
+              Get Your Free{" "}
+              <span className="text-primary">AI Automation Assessment</span>
+            </h1>
+            <p className="text-xl text-muted-foreground leading-relaxed mb-8">
+              Ready to see how Fortune 10-level AI automation could save your business time and money? 
+              Let's start with a free 30-minute consultation to explore your automation opportunities.
+            </p>
               
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
                 <div className="flex items-center justify-center space-x-3 p-4 bg-card rounded-lg border">
@@ -72,10 +72,10 @@ const Contact = () => {
               <div className="lg:col-span-2">
                 <div className="bg-card p-8 rounded-2xl border shadow-soft">
                   <h2 className="text-2xl font-bold text-foreground mb-2">
-                    Schedule Your Free Consultation
+                    Schedule Your Free AI Consultation
                   </h2>
                   <p className="text-muted-foreground mb-8">
-                    Fill out the form below and we'll contact you within 4 business hours to schedule your consultation.
+                    Fill out the form below and I'll contact you within 4 business hours to schedule your personalized AI automation assessment.
                   </p>
 
                   <form onSubmit={handleSubmit} className="space-y-6">
@@ -190,8 +190,8 @@ const Contact = () => {
                     </Button>
 
                     <p className="text-sm text-muted-foreground text-center">
-                      By submitting this form, you agree to receive communications from Vegas Business Automation. 
-                      We respect your privacy and won't spam you.
+                      By submitting this form, you agree to receive communications from Agent Alvin. 
+                      Your privacy is respected and we won't spam you.
                     </p>
                   </form>
                 </div>
@@ -222,8 +222,8 @@ const Contact = () => {
                       </div>
                       <div>
                         <div className="font-medium text-foreground">Email</div>
-                        <a href="mailto:info@vegasbusinessautomation.com" className="text-muted-foreground hover:text-primary transition-smooth">
-                          info@vegasbusinessautomation.com
+                        <a href="mailto:hello@agentalvin.ai" className="text-muted-foreground hover:text-primary transition-smooth">
+                          hello@agentalvin.ai
                         </a>
                       </div>
                     </div>
@@ -235,8 +235,8 @@ const Contact = () => {
                       <div>
                         <div className="font-medium text-foreground">Service Area</div>
                         <div className="text-muted-foreground">
-                          Las Vegas Metro Area<br />
-                          Nevada
+                          Nationwide<br />
+                          Remote AI Automation
                         </div>
                       </div>
                     </div>
@@ -268,7 +268,7 @@ const Contact = () => {
                     </div>
                     <div className="flex items-center space-x-3">
                       <MapPin className="w-5 h-5 text-green-500" />
-                      <span className="text-sm text-foreground">Local Las Vegas Business</span>
+                      <span className="text-sm text-foreground">Fortune 10 Experience</span>
                     </div>
                     <div className="flex items-center space-x-3">
                       <Clock className="w-5 h-5 text-green-500" />
@@ -279,13 +279,13 @@ const Contact = () => {
 
                 {/* Call Now Button */}
                 <div className="bg-gradient-to-r from-primary to-primary-dark p-6 rounded-2xl text-center text-white">
-                  <h3 className="text-lg font-bold mb-2">Need to Talk Right Now?</h3>
+                  <h3 className="text-lg font-bold mb-2">Ready to Get Started?</h3>
                   <p className="text-sm text-white/90 mb-4">
-                    Call us directly for immediate assistance
+                    Schedule your free AI automation consultation
                   </p>
                   <Button variant="secondary" size="lg" className="w-full">
                     <Phone className="w-5 h-5 mr-2" />
-                    Call (702) 555-0123
+                    Schedule Free Consultation
                   </Button>
                 </div>
               </div>
