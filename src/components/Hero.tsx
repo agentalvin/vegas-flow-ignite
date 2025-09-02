@@ -1,74 +1,64 @@
 import { Button } from "@/components/ui/button";
-import { Play, Check } from "lucide-react";
-import heroImage from "@/assets/hero-image.jpg";
+import { Check, ArrowRight } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="relative pt-24 pb-16 md:pt-32 md:pb-24 overflow-hidden">
-      {/* Background Elements */}
+    <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
+      {/* Subtle Background */}
       <div className="absolute inset-0 gradient-subtle"></div>
-      <div className="absolute top-0 right-0 w-1/2 h-full opacity-5">
-        <div className="w-full h-full gradient-primary"></div>
-      </div>
-
+      
       <div className="relative container mx-auto px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <div className="space-y-8">
+        <div className="max-w-5xl mx-auto text-center">
+          <div className="space-y-10">
+            {/* Main Headline */}
             <div className="space-y-6">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-light text-foreground leading-tight">
-                Stop Losing Money to{" "}
-                <span className="text-primary font-medium">Manual Processes</span>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-light text-foreground leading-tight tracking-tight">
+                I've worked in tech, building scalable, automated systems for{" "}
+                <span className="text-primary font-medium">Fortune 10 companies</span>.
               </h1>
               
-              <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-                We build done-for-you automation systems that eliminate admin chaos for Las Vegas service businesses. 
-                <span className="text-secondary font-medium"> Save 15+ hours weekly</span> while 
-                <span className="text-secondary font-medium"> increasing revenue 30%</span>.
-              </p>
+              <div className="max-w-4xl mx-auto">
+                <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
+                  I'll leverage my expertise to build enterprise-level automation in sales, customer service, 
+                  marketing, payments, and more. Expect to save money, hire fewer employees, while{" "}
+                  <span className="text-sage font-medium">increasing revenue by 30% or more</span>.
+                </p>
+              </div>
+            </div>
 
-              {/* Trust Points */}
-              <div className="space-y-3 max-w-lg mx-auto">
-                <div className="flex items-center justify-center space-x-3">
-                  <Check className="w-5 h-5 text-secondary flex-shrink-0" />
-                  <span className="text-foreground">No contracts • Local Las Vegas company</span>
-                </div>
-                <div className="flex items-center justify-center space-x-3">
-                  <Check className="w-5 h-5 text-secondary flex-shrink-0" />
-                  <span className="text-foreground">30-day satisfaction guarantee</span>
-                </div>
-                <div className="flex items-center justify-center space-x-3">
-                  <Check className="w-5 h-5 text-secondary flex-shrink-0" />
-                  <span className="text-foreground">Fortune 500-level automation for small business</span>
-                </div>
+            {/* Key Benefits */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl mx-auto">
+              <div className="flex items-center justify-center space-x-3 p-4 bg-card rounded-lg shadow-soft">
+                <Check className="w-5 h-5 text-sage flex-shrink-0" />
+                <span className="text-sm text-foreground font-medium">Save Money</span>
+              </div>
+              <div className="flex items-center justify-center space-x-3 p-4 bg-card rounded-lg shadow-soft">
+                <Check className="w-5 h-5 text-sage flex-shrink-0" />
+                <span className="text-sm text-foreground font-medium">Hire Fewer Employees</span>
+              </div>
+              <div className="flex items-center justify-center space-x-3 p-4 bg-card rounded-lg shadow-soft">
+                <Check className="w-5 h-5 text-sage flex-shrink-0" />
+                <span className="text-sm text-foreground font-medium">30%+ Revenue Increase</span>
               </div>
             </div>
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="hero" size="xl" className="group">
-                Get Your Free Automation Audit
-                <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
+              <Button size="lg" className="group">
+                Schedule Your Consultation
+                <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </Button>
               
-              <Button variant="outline" size="xl" className="group">
-                <Play className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
-                Watch How It Works
+              <Button variant="outline" size="lg">
+                Get Your Automation Assessment
               </Button>
             </div>
 
-            {/* Social Proof Numbers */}
-            <div className="grid grid-cols-3 gap-6 pt-8 border-t max-w-md mx-auto">
-              <div className="text-center">
-                <div className="text-2xl md:text-3xl font-light text-primary">50+</div>
-                <div className="text-sm text-muted-foreground">Businesses Automated</div>
-              </div>
-              <div className="text-center">
-                <div className="text-2xl md:text-3xl font-light text-primary">15+</div>
-                <div className="text-sm text-muted-foreground">Hours Saved Weekly</div>
-              </div>
-              <div className="text-center">
-                <div className="text-2xl md:text-3xl font-light text-primary">30%</div>
-                <div className="text-sm text-muted-foreground">Revenue Increase</div>
+            {/* Credentials */}
+            <div className="pt-8">
+              <p className="text-sm text-muted-foreground mb-4">Trusted by</p>
+              <div className="text-xs text-muted-foreground space-x-4">
+                <span>Upwork</span> • <span>Shift Technologies</span> • <span>Experian</span> • <span>Netflix</span> • <span>Toyota</span>
               </div>
             </div>
           </div>

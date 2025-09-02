@@ -1,117 +1,106 @@
-import { Star, Quote } from "lucide-react";
+import { Star, TrendingUp, Clock, DollarSign } from "lucide-react";
 
 const TestimonialsSection = () => {
-  const testimonials = [
+  const results = [
     {
-      name: "Sarah Martinez",
-      business: "Serenity Med Spa",
-      industry: "Wellness",
-      image: "https://images.unsplash.com/photo-1494790108755-2616b86a3aac?w=100&h=100&fit=crop&crop=face",
-      quote: "Vegas Business Automation completely transformed how we handle appointments and follow-ups. We went from losing 30% of leads to converting 85%. I got my evenings back and my revenue increased by 40%.",
-      result: "40% revenue increase",
-      timeframe: "Within 3 months"
+      icon: Clock,
+      metric: "20+ Hours",
+      description: "Saved weekly through automation",
+      detail: "Administrative tasks eliminated"
     },
     {
-      name: "Mike Thompson",
-      business: "Thompson HVAC",
-      industry: "Home Services",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face",
-      quote: "The automated quote system and payment reminders have been game-changers. My team spends 20 hours less per week on admin work, and we're collecting payments 60% faster. Best investment I've made.",
-      result: "20 hours saved weekly",
-      timeframe: "Immediate impact"
+      icon: DollarSign,
+      metric: "40% Increase", 
+      description: "In revenue within 6 months",
+      detail: "Through improved lead conversion"
     },
     {
-      name: "Lisa Chen",
-      business: "Elite Fitness Studio",
-      industry: "Fitness",
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face",
-      quote: "I was drowning in membership management and class bookings. Now everything runs automatically - from lead capture to payment processing. My studio grew by 50% while I work fewer hours.",
-      result: "50% business growth",
-      timeframe: "Within 6 months"
+      icon: TrendingUp,
+      metric: "70% Reduction",
+      description: "In customer service costs", 
+      detail: "With AI-powered support"
     }
   ];
 
+  const testimonial = {
+    quote: "Working with Alvin transformed our entire business operation. The AI automation systems he built saved us thousands in operational costs while actually improving our customer experience. We went from drowning in manual processes to having systems that work around the clock.",
+    author: "Sarah Chen",
+    role: "CEO, TechStart Solutions",
+    company: "B2B SaaS Company"
+  };
+
   return (
-    <section className="py-16 md:py-24 bg-card/30">
+    <section className="py-20 md:py-28 bg-muted/30">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
-            Local Las Vegas Businesses Are Already{" "}
-            <span className="text-primary">Saving Hours Daily</span>
+        <div className="max-w-4xl mx-auto text-center mb-16">
+          <div className="inline-flex items-center space-x-2 bg-sage/10 text-sage px-4 py-2 rounded-full text-sm font-medium mb-6">
+            <Star className="w-4 h-4" />
+            <span>Proven Results</span>
+          </div>
+          
+          <h2 className="text-3xl md:text-4xl font-light text-foreground mb-6">
+            Real Results from{" "}
+            <span className="text-primary font-medium">Real Businesses</span>
           </h2>
-          <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-            Don't just take our word for it. Here's what your fellow Las Vegas business owners 
-            are saying about their automation results.
+          
+          <p className="text-lg text-muted-foreground leading-relaxed">
+            These aren't theoretical improvements—they're measurable results from businesses 
+            that implemented enterprise-level automation.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-          {testimonials.map((testimonial, index) => (
-            <div 
-              key={index}
-              className="group p-8 bg-card rounded-2xl border border-border shadow-soft hover:shadow-large transition-smooth hover:-translate-y-2"
-            >
-              {/* Quote Icon */}
-              <div className="flex justify-between items-start mb-6">
-                <Quote className="w-8 h-8 text-primary/30" />
-                <div className="flex space-x-1">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-4 h-4 fill-secondary text-secondary" />
-                  ))}
-                </div>
+        {/* Results Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto mb-16">
+          {results.map((result, index) => (
+            <div key={index} className="bg-card p-6 rounded-lg shadow-soft text-center">
+              <div className="w-12 h-12 bg-sage/10 rounded-lg flex items-center justify-center mx-auto mb-4">
+                <result.icon className="w-6 h-6 text-sage" />
               </div>
-
-              {/* Testimonial Content */}
-              <blockquote className="text-foreground leading-relaxed mb-6 italic">
-                "{testimonial.quote}"
-              </blockquote>
-
-              {/* Results */}
-              <div className="space-y-3 mb-6">
-                <div className="flex items-center justify-between p-3 bg-secondary/10 rounded-lg border border-secondary/20">
-                  <span className="text-sm font-medium text-foreground">Result:</span>
-                  <span className="text-sm font-bold text-secondary">{testimonial.result}</span>
-                </div>
-                <div className="flex items-center justify-between p-3 bg-primary/10 rounded-lg border border-primary/20">
-                  <span className="text-sm font-medium text-foreground">Timeline:</span>
-                  <span className="text-sm font-bold text-primary">{testimonial.timeframe}</span>
-                </div>
+              <div className="text-2xl font-light text-primary mb-2">
+                {result.metric}
               </div>
-
-              {/* Author Info */}
-              <div className="flex items-center space-x-4 pt-6 border-t border-border">
-                <img 
-                  src={testimonial.image} 
-                  alt={testimonial.name}
-                  className="w-12 h-12 rounded-full object-cover ring-2 ring-primary/20"
-                />
-                <div className="flex-1">
-                  <div className="font-semibold text-foreground">{testimonial.name}</div>
-                  <div className="text-sm text-muted-foreground">{testimonial.business}</div>
-                  <div className="text-xs text-primary font-medium">{testimonial.industry}</div>
-                </div>
+              <div className="text-foreground font-medium mb-1">
+                {result.description}
+              </div>
+              <div className="text-sm text-muted-foreground">
+                {result.detail}
               </div>
             </div>
           ))}
         </div>
 
-        {/* Trust Indicators */}
-        <div className="mt-16 text-center">
-          <div className="inline-flex items-center space-x-8 p-6 bg-card rounded-2xl border border-border shadow-soft">
-            <div className="text-center">
-              <div className="text-2xl font-bold text-primary">4.9/5</div>
-              <div className="text-sm text-muted-foreground">Client Rating</div>
-            </div>
-            <div className="w-px h-12 bg-border"></div>
-            <div className="text-center">
-              <div className="text-2xl font-bold text-primary">50+</div>
-              <div className="text-sm text-muted-foreground">Businesses Automated</div>
-            </div>
-            <div className="w-px h-12 bg-border"></div>
-            <div className="text-center">
-              <div className="text-2xl font-bold text-primary">100%</div>
-              <div className="text-sm text-muted-foreground">Local Las Vegas</div>
-            </div>
+        {/* Featured Testimonial */}
+        <div className="bg-card p-8 rounded-lg shadow-soft max-w-3xl mx-auto">
+          <div className="flex items-center justify-center mb-4">
+            {[...Array(5)].map((_, i) => (
+              <Star key={i} className="w-5 h-5 text-sage fill-current" />
+            ))}
+          </div>
+          
+          <blockquote className="text-lg text-foreground leading-relaxed mb-6 italic">
+            "{testimonial.quote}"
+          </blockquote>
+          
+          <div className="text-center">
+            <div className="font-medium text-foreground">{testimonial.author}</div>
+            <div className="text-sm text-muted-foreground">{testimonial.role}</div>
+            <div className="text-xs text-muted-foreground mt-1">{testimonial.company}</div>
+          </div>
+        </div>
+
+        {/* Enterprise Credentials */}
+        <div className="text-center mt-12">
+          <p className="text-sm text-muted-foreground mb-3">
+            Experience from Fortune 10 Companies
+          </p>
+          <div className="text-xs text-muted-foreground space-x-4">
+            <span>Upwork • Principal Product Manager</span>
+          </div>
+          <div className="text-xs text-muted-foreground space-x-4 mt-1">
+            <span>Shift Technologies • Group Product Manager</span>
+          </div>
+          <div className="text-xs text-muted-foreground space-x-4 mt-1">
+            <span>Experian • Senior Product Manager</span>
           </div>
         </div>
       </div>

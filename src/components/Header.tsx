@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Phone, Menu } from "lucide-react";
+import { Menu } from "lucide-react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -11,13 +11,13 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
-            <div className="w-10 h-10 gradient-primary rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-xl">V</span>
+          <div className="flex items-center space-x-3">
+            <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
+              <span className="text-primary-foreground font-medium text-lg">A</span>
             </div>
             <div>
-              <h1 className="text-xl font-bold text-primary">Vegas Business</h1>
-              <p className="text-sm text-muted-foreground -mt-1">Automation</p>
+              <h1 className="text-xl font-medium text-foreground">Agent Alvin</h1>
+              <p className="text-xs text-muted-foreground -mt-1">agentalvin.ai</p>
             </div>
           </div>
 
@@ -35,9 +35,6 @@ const Header = () => {
             <Link to="/case-studies" className="text-foreground hover:text-primary transition-smooth font-medium">
               Case Studies
             </Link>
-            <Link to="/resources" className="text-foreground hover:text-primary transition-smooth font-medium">
-              Resources
-            </Link>
             <Link to="/contact" className="text-foreground hover:text-primary transition-smooth font-medium">
               Contact
             </Link>
@@ -45,12 +42,11 @@ const Header = () => {
 
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center space-x-4">
-            <a href="tel:(702)555-0123" className="flex items-center space-x-2 text-primary hover:text-primary-dark transition-smooth">
-              <Phone className="w-4 h-4" />
-              <span className="font-medium">(702) 555-0123</span>
+            <a href="mailto:hello@agentalvin.ai" className="text-muted-foreground hover:text-primary transition-smooth text-sm">
+              hello@agentalvin.ai
             </a>
-            <Button variant="hero" size="sm">
-              Free Audit
+            <Button variant="default" size="sm">
+              Schedule Consultation
             </Button>
           </div>
 
@@ -79,19 +75,15 @@ const Header = () => {
               <Link to="/case-studies" className="text-foreground hover:text-primary transition-smooth font-medium">
                 Case Studies
               </Link>
-              <Link to="/resources" className="text-foreground hover:text-primary transition-smooth font-medium">
-                Resources
-              </Link>
               <Link to="/contact" className="text-foreground hover:text-primary transition-smooth font-medium">
                 Contact
               </Link>
               <div className="flex flex-col space-y-3 pt-4 border-t">
-                <a href="tel:(702)555-0123" className="flex items-center space-x-2 text-primary">
-                  <Phone className="w-4 h-4" />
-                  <span className="font-medium">(702) 555-0123</span>
+                <a href="mailto:hello@agentalvin.ai" className="text-muted-foreground">
+                  hello@agentalvin.ai
                 </a>
-                <Button variant="hero" size="sm" className="self-start">
-                  Free Audit
+                <Button variant="default" size="sm" className="self-start">
+                  Schedule Consultation
                 </Button>
               </div>
             </nav>

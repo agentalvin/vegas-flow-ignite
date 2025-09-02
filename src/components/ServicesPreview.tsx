@@ -1,174 +1,102 @@
 import { Button } from "@/components/ui/button";
-import { 
-  Magnet, 
-  MessageSquare, 
-  CreditCard, 
-  BarChart3,
-  ArrowRight,
-  Check
-} from "lucide-react";
+import { ArrowRight, Cpu, MessageSquare, Database, CreditCard, Globe, Phone } from "lucide-react";
 
 const ServicesPreview = () => {
   const services = [
     {
-      icon: Magnet,
-      title: "Lead Capture System",
-      subtitle: "Never miss another potential customer",
-      description: "Automatically capture leads from your website, social media, referrals, and walk-ins. Every prospect gets into your system instantly.",
-      features: [
-        "Website forms & chat widgets",
-        "Social media lead capture",
-        "Referral tracking system",
-        "Lead scoring & qualification"
-      ],
-      color: "text-blue-600",
-      bgColor: "bg-blue-50",
-      borderColor: "border-blue-200"
+      icon: Cpu,
+      title: "AI & Machine Learning",
+      description: "Custom automation using Claude/ChatGPT for intelligent customer interactions, predictive analytics, and process optimization"
     },
     {
-      icon: MessageSquare,
-      title: "Client Communication",
-      subtitle: "Automated follow-up that converts",
-      description: "Smart email and text sequences that nurture leads, confirm appointments, and keep clients engaged 24/7.",
-      features: [
-        "Automated email sequences",
-        "SMS appointment reminders",
-        "Follow-up campaigns",
-        "Customer satisfaction surveys"
-      ],
-      color: "text-green-600",
-      bgColor: "bg-green-50",
-      borderColor: "border-green-200"
+      icon: Database,
+      title: "Business Operations",
+      description: "Airtable-powered databases, workflow automation, and data management systems that scale with your business"
     },
     {
       icon: CreditCard,
-      title: "Payment Processing",
-      subtitle: "Get paid faster with less effort",
-      description: "Automated invoicing, payment reminders, and online payment processing that improves your cash flow.",
-      features: [
-        "Automatic invoice generation",
-        "Payment reminder sequences",
-        "Online payment processing",
-        "Late payment notifications"
-      ],
-      color: "text-purple-600",
-      bgColor: "bg-purple-50",
-      borderColor: "border-purple-200"
+      title: "Payment Systems",
+      description: "Square/Stripe integration with automated invoicing, subscription management, and financial reconciliation"
     },
     {
-      icon: BarChart3,
-      title: "Business Dashboard",
-      subtitle: "See your business performance in real-time",
-      description: "Comprehensive dashboard showing leads, sales, client satisfaction, and key metrics that matter to your business.",
-      features: [
-        "Real-time performance metrics",
-        "Lead conversion tracking",
-        "Revenue & profit analysis",
-        "Client lifetime value"
-      ],
-      color: "text-orange-600",
-      bgColor: "bg-orange-50",
-      borderColor: "border-orange-200"
+      icon: Phone,
+      title: "Voice AI Systems",
+      description: "VAPI-powered call agents for customer service, appointment booking, and automated phone workflows"
+    },
+    {
+      icon: Globe,
+      title: "Web & Mobile Development",
+      description: "Modern websites and apps built with Framer, optimized for conversion and user experience"
+    },
+    {
+      icon: MessageSquare,
+      title: "Customer Communication",
+      description: "Automated email campaigns, chatbots, and omnichannel support that never sleeps"
     }
   ];
 
+  const techPartners = [
+    { name: "Framer", description: "Modern web development" },
+    { name: "Claude AI", description: "Advanced language processing" },
+    { name: "Airtable", description: "Business operations" },
+    { name: "Square", description: "Payment processing" },
+    { name: "VAPI", description: "AI call agents" },
+    { name: "Stripe", description: "Financial automation" }
+  ];
+
   return (
-    <section className="py-16 md:py-24 bg-background">
+    <section className="py-20 md:py-28">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
-            What We Build{" "}
-            <span className="text-primary">For You</span>
+        <div className="max-w-4xl mx-auto text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-light text-foreground mb-6">
+            Enterprise-Grade Tools,{" "}
+            <span className="text-primary font-medium">Small Business Scale</span>
           </h2>
-          <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-            We don't just give you software – we build complete automation systems 
-            tailored specifically for your Las Vegas service business.
+          
+          <p className="text-lg text-muted-foreground leading-relaxed">
+            I leverage the same automation platforms used by Fortune 10 companies, 
+            configured specifically for small business budgets and requirements.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto mb-16">
-          {services.map((service, index) => {
-            const Icon = service.icon;
-            return (
-              <div 
-                key={index}
-                className="group p-8 bg-card rounded-2xl border border-border shadow-soft hover:shadow-large transition-smooth hover:-translate-y-1"
-              >
-                <div className="flex items-start space-x-4 mb-6">
-                  <div className={`w-16 h-16 ${service.bgColor} ${service.borderColor} border-2 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform`}>
-                    <Icon className={`w-8 h-8 ${service.color}`} />
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="text-xl font-bold text-foreground mb-2">
-                      {service.title}
-                    </h3>
-                    <p className="text-sm font-medium text-secondary mb-3">
-                      {service.subtitle}
-                    </p>
-                  </div>
-                </div>
-
-                <p className="text-muted-foreground leading-relaxed mb-6">
-                  {service.description}
-                </p>
-
-                <div className="space-y-2 mb-6">
-                  {service.features.map((feature, featureIndex) => (
-                    <div key={featureIndex} className="flex items-center space-x-3">
-                      <Check className="w-4 h-4 text-green-500 flex-shrink-0" />
-                      <span className="text-sm text-foreground">{feature}</span>
-                    </div>
-                  ))}
-                </div>
-
-                <div className="flex items-center text-primary hover:text-primary-dark transition-smooth cursor-pointer group/link">
-                  <span className="font-medium text-sm">Learn more</span>
-                  <ArrowRight className="w-4 h-4 ml-2 group-hover/link:translate-x-1 transition-transform" />
-                </div>
+        {/* Services Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto mb-16">
+          {services.map((service, index) => (
+            <div key={index} className="bg-card p-6 rounded-lg shadow-soft border border-border hover:shadow-medium transition-smooth group">
+              <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                <service.icon className="w-6 h-6 text-primary" />
               </div>
-            );
-          })}
+              <h3 className="text-lg font-medium text-foreground mb-3">
+                {service.title}
+              </h3>
+              <p className="text-muted-foreground text-sm leading-relaxed">
+                {service.description}
+              </p>
+            </div>
+          ))}
         </div>
 
-        {/* Process Preview */}
-        <div className="bg-muted/30 rounded-2xl p-8 md:p-12 border border-border">
-          <div className="text-center mb-12">
-            <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
-              Our Simple 4-Week Process
-            </h3>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              We handle everything from strategy to implementation, so you can focus on running your business.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-            {[
-              { week: "Week 1", title: "Strategy & Foundation", description: "Audit your current processes and design your custom automation system" },
-              { week: "Week 2", title: "Core System Build", description: "Set up your CRM, payment processing, and communication workflows" },
-              { week: "Week 3", title: "Integration & Testing", description: "Connect all systems and test every automation to ensure perfection" },
-              { week: "Week 4", title: "Launch & Training", description: "Go live with your new system and train your team on everything" }
-            ].map((step, index) => (
+        {/* Technology Partners */}
+        <div className="bg-muted/30 p-8 rounded-lg max-w-4xl mx-auto mb-12">
+          <h3 className="text-xl font-medium text-foreground mb-6 text-center">
+            Technology Partners
+          </h3>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
+            {techPartners.map((tech, index) => (
               <div key={index} className="text-center">
-                <div className="w-12 h-12 gradient-primary text-white rounded-full flex items-center justify-center font-bold text-lg mx-auto mb-4">
-                  {index + 1}
-                </div>
-                <div className="text-sm font-medium text-secondary mb-2">{step.week}</div>
-                <h4 className="font-semibold text-foreground mb-2">{step.title}</h4>
-                <p className="text-sm text-muted-foreground">{step.description}</p>
+                <div className="font-medium text-foreground">{tech.name}</div>
+                <div className="text-xs text-muted-foreground">{tech.description}</div>
               </div>
             ))}
           </div>
         </div>
 
         {/* CTA */}
-        <div className="text-center mt-16">
-          <Button variant="cta" size="xl" className="group">
-            See How This Works For Your Business
-            <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+        <div className="text-center">
+          <Button size="lg" className="group">
+            Explore All Services
+            <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </Button>
-          <p className="text-sm text-muted-foreground mt-4">
-            Free consultation • No obligations • Custom strategy session
-          </p>
         </div>
       </div>
     </section>
