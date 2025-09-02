@@ -2,22 +2,9 @@ import { Button } from "@/components/ui/button";
 import { Mail, Linkedin, Twitter } from "lucide-react";
 
 const Footer = () => {
-  const companyLogos = [
-    "Upwork", "Shift Technologies", "Experian", "Slickdeals", "Netflix", "Toyota", "Tillamook"
-  ];
-
   return (
     <footer className="bg-foreground text-background">
       <div className="container mx-auto px-4 py-16">
-        {/* Company Logos Section */}
-        <div className="text-center mb-12 pb-8 border-b border-background/20">
-          <p className="text-sm text-background/60 mb-4">Trusted Experience From</p>
-          <div className="flex flex-wrap justify-center gap-6 text-xs text-background/40">
-            {companyLogos.map((company, index) => (
-              <span key={index}>{company}</span>
-            ))}
-          </div>
-        </div>
 
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}

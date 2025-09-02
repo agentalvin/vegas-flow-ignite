@@ -54,11 +54,16 @@ const Hero = () => {
               </Button>
             </div>
 
-            {/* Credentials */}
+            {/* Company Logos */}
             <div className="pt-8">
-              <p className="text-sm text-muted-foreground mb-4">Trusted by</p>
-              <div className="text-xs text-muted-foreground space-x-4">
-                <span>Upwork</span> • <span>Shift Technologies</span> • <span>Experian</span> • <span>Netflix</span> • <span>Toyota</span>
+              <p className="text-sm text-muted-foreground mb-6">Trusted experience from</p>
+              <div className="flex flex-wrap justify-center items-center gap-8 opacity-60">
+                <div className="text-lg font-medium text-muted-foreground">Upwork</div>
+                <div className="text-lg font-medium text-muted-foreground">Experian</div>
+                <div className="text-lg font-medium text-muted-foreground">Netflix</div>
+                <div className="text-lg font-medium text-muted-foreground">Toyota</div>
+                <div className="text-lg font-medium text-muted-foreground">Tillamook</div>
+                <div className="text-lg font-medium text-muted-foreground">Slickdeals</div>
               </div>
             </div>
           </div>
