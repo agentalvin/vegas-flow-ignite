@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { CheckCircle, ArrowRight } from "lucide-react";
+import { Database, Zap, Headphones, BarChart3 } from "lucide-react";
 
 const ServicesSection = () => {
   return (
@@ -9,77 +9,139 @@ const ServicesSection = () => {
           {/* Header */}
           <div className="text-center mb-20">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-light text-foreground mb-6">
-              What I Do
+              Automation Systems
             </h2>
-            <div className="w-24 h-0.5 bg-sage mx-auto"></div>
+            <p className="text-xl md:text-2xl text-muted-foreground font-light max-w-3xl mx-auto">
+              Complete no-code solutions to streamline your operations and free your team to focus on growth.
+            </p>
           </div>
 
-          {/* Services Grid */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20">
-            
-            {/* Fractional Product Consulting */}
-            <div className="space-y-8">
-              <div>
-                <h3 className="text-2xl md:text-3xl font-medium text-foreground mb-6">
-                  Fractional Product Consulting
-                </h3>
-                <div className="space-y-4 text-muted-foreground leading-relaxed">
-                  <p>• Product strategy and roadmap definition</p>
-                  <p>• Mobile app leadership (iOS/Android – native and hybrid platforms)</p>
-                  <p>• Web product development — not just internal tools, but external-facing experiences for marketplaces, fintech, eCommerce, and more</p>
-                  <p>• AI/ML-powered features (risk scoring, personalization, agent flows)</p>
-                  <p>• Trust & safety and platform integrity</p>
-                  <p>• IAM and permissions architecture</p>
+          {/* Primary Service - Automation */}
+          <div className="mb-20">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+              {/* Airtable Systems */}
+              <div className="text-center space-y-4">
+                <div className="w-16 h-16 bg-sage/10 rounded-2xl mx-auto flex items-center justify-center">
+                  <Database className="w-8 h-8 text-sage" />
                 </div>
+                <h3 className="text-lg font-medium text-foreground">Airtable CRM</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  Custom databases, client management, and operational backends that scale with your business.
+                </p>
               </div>
-              
-              <div className="space-y-4 p-6 bg-sage/5 rounded-2xl border border-sage/10">
-                <div className="flex items-start space-x-3">
-                  <CheckCircle className="w-5 h-5 text-sage mt-0.5 flex-shrink-0" />
-                  <p className="text-foreground leading-relaxed">
-                    I've built and launched full-scale mobile and web platforms — from 0 to launch — for companies across multiple verticals.
-                  </p>
+
+              {/* Zapier Automation */}
+              <div className="text-center space-y-4">
+                <div className="w-16 h-16 bg-sage/10 rounded-2xl mx-auto flex items-center justify-center">
+                  <Zap className="w-8 h-8 text-sage" />
                 </div>
-                <div className="flex items-start space-x-3">
-                  <CheckCircle className="w-5 h-5 text-sage mt-0.5 flex-shrink-0" />
-                  <p className="text-foreground leading-relaxed">
-                    I work with a trusted network of world-class engineers and designers to help you ship fast and confidently.
-                  </p>
+                <h3 className="text-lg font-medium text-foreground">Zapier Workflows</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  Connect your tools and automate repetitive tasks. Email sequences, form processing, data sync.
+                </p>
+              </div>
+
+              {/* AI Voice Agents */}
+              <div className="text-center space-y-4">
+                <div className="w-16 h-16 bg-sage/10 rounded-2xl mx-auto flex items-center justify-center">
+                  <Headphones className="w-8 h-8 text-sage" />
                 </div>
+                <h3 className="text-lg font-medium text-foreground">AI Call Agents</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  Voice AI for client onboarding, call routing, and customer support that works 24/7.
+                </p>
+              </div>
+
+              {/* Analytics & Reporting */}
+              <div className="text-center space-y-4">
+                <div className="w-16 h-16 bg-sage/10 rounded-2xl mx-auto flex items-center justify-center">
+                  <BarChart3 className="w-8 h-8 text-sage" />
+                </div>
+                <h3 className="text-lg font-medium text-foreground">Dashboards</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  Real-time reporting and analytics to track performance and make data-driven decisions.
+                </p>
               </div>
             </div>
+          </div>
 
-            {/* Automation Systems */}
-            <div className="space-y-8">
+          {/* The Stack */}
+          <div className="bg-gradient-warm rounded-2xl p-8 md:p-12 mb-16">
+            <div className="text-center mb-8">
+              <h3 className="text-2xl md:text-3xl font-medium text-foreground mb-4">
+                The AgentAlvin Stack
+              </h3>
+              <p className="text-lg text-muted-foreground">
+                This is the exact system I use to run my own consultancy. Proven, modular, and ready to deploy.
+              </p>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
               <div>
-                <h3 className="text-2xl md:text-3xl font-medium text-foreground mb-6">
-                  Automation Systems
-                </h3>
-                <div className="space-y-4 text-muted-foreground leading-relaxed">
-                  <p>• Airtable-based CRM and ops backends</p>
-                  <p>• Zapier integrations and automations</p>
-                  <p>• Framer websites and embedded forms</p>
-                  <p>• Voice AI agents for call routing and customer support</p>
-                  <p>• Modular, repeatable automation for lean ops or service businesses</p>
+                <h4 className="font-medium text-foreground mb-2">Operations</h4>
+                <p className="text-sm text-muted-foreground">Airtable • Zapier • Calendly • Stripe</p>
+              </div>
+              <div>
+                <h4 className="font-medium text-foreground mb-2">Communication</h4>
+                <p className="text-sm text-muted-foreground">AI Agents • Email Automation • Slack Integration</p>
+              </div>
+              <div>
+                <h4 className="font-medium text-foreground mb-2">Analytics</h4>
+                <p className="text-sm text-muted-foreground">Custom Dashboards • Performance Tracking • ROI Reports</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Secondary Service - Fractional Consulting */}
+          <div className="border-t border-border pt-16">
+            <div className="text-center mb-12">
+              <h3 className="text-2xl md:text-3xl font-medium text-foreground mb-4">
+                Fractional Product Consulting
+              </h3>
+              <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+                Strategic product leadership for web and mobile platforms when you need senior expertise without the full-time commitment.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+              <div>
+                <h4 className="text-lg font-medium text-foreground mb-4">What I Do</h4>
+                <div className="space-y-3">
+                  <div className="flex items-start space-x-3">
+                    <div className="w-2 h-2 bg-sage rounded-full mt-2 flex-shrink-0" />
+                    <p className="text-muted-foreground text-sm">Product roadmap and strategy definition</p>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <div className="w-2 h-2 bg-sage rounded-full mt-2 flex-shrink-0" />
+                    <p className="text-muted-foreground text-sm">Mobile app development leadership</p>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <div className="w-2 h-2 bg-sage rounded-full mt-2 flex-shrink-0" />
+                    <p className="text-muted-foreground text-sm">Web platform architecture and scaling</p>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <div className="w-2 h-2 bg-sage rounded-full mt-2 flex-shrink-0" />
+                    <p className="text-muted-foreground text-sm">Team leadership through key milestones</p>
+                  </div>
                 </div>
               </div>
-              
-              <div className="p-6 bg-clay/10 rounded-2xl border border-clay/20">
-                <div className="flex items-start space-x-3">
-                  <CheckCircle className="w-5 h-5 text-sage mt-0.5 flex-shrink-0" />
-                  <p className="text-foreground leading-relaxed">
-                    This stack is based on my internal system — the same one I use to run AgentAlvin.ai.
-                  </p>
-                </div>
+
+              <div>
+                <h4 className="text-lg font-medium text-foreground mb-4">Experience</h4>
+                <p className="text-muted-foreground text-sm leading-relaxed mb-4">
+                  Led product initiatives at Shift, Upwork, and Slickdeals. Shipped platforms used by millions across marketplace, fintech, and eCommerce verticals.
+                </p>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  Work with trusted network of engineers and designers to help startups and agencies deliver complex features on time and budget.
+                </p>
               </div>
             </div>
           </div>
 
           {/* CTA */}
-          <div className="text-center mt-16">
+          <div className="text-center mt-20">
             <Button size="lg" className="text-lg px-8 py-4 h-auto">
-              Discuss Your Project
-              <ArrowRight className="ml-3 w-5 h-5" />
+              Let's Talk
             </Button>
           </div>
         </div>
