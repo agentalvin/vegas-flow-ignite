@@ -13,8 +13,7 @@ const Hero = () => {
             {/* Main Headline */}
             <div className="space-y-6">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-light text-foreground leading-tight tracking-tight">
-                I've worked in tech, building scalable, automated systems for{" "}
-                <span className="text-primary font-medium">Fortune 10 companies</span>.
+                I help companies ship complex web, mobile, and AI products.
               </h1>
               
               <div className="max-w-4xl mx-auto">
