@@ -67,9 +67,10 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				sage: 'hsl(var(--sage))',
-				'blue-vivid': 'hsl(var(--blue-vivid))',
-				'purple': 'hsl(var(--purple))',
-				'orange': 'hsl(var(--orange))'
+				clay: 'hsl(var(--clay))',
+				beige: 'hsl(var(--beige))',
+				charcoal: 'hsl(var(--charcoal))',
+				'warm-gray': 'hsl(var(--warm-gray))'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
