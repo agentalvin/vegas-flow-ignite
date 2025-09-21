@@ -8,76 +8,67 @@ const AboutSection = () => {
         <div className="max-w-4xl mx-auto">
           {/* Header */}
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-light text-foreground mb-4">
-              Hi, I'm Alvin.
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-light text-foreground mb-6">
+              Product execution meets systems thinking
             </h2>
-            <p className="text-xl md:text-2xl text-muted-foreground font-light">
-              Automation consultant. Product leader. Systems builder.
+          </div>
+
+          {/* Main Bio */}
+          <div className="max-w-4xl mx-auto mb-16">
+            <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
+              <p>
+                I'm Alvin, a product leader, strategist, and builder with over a decade of experience shipping web, mobile, and AI-powered products. I've worked at companies like Upwork, Experian, and Toyota, helping them solve hard problems and launch features that scale.
+              </p>
+              
+              <p>
+                My focus is simple: build systems that work. Whether you need product leadership or scalable automation, I bring clarity, technical fluency, and an eye for execution.
+              </p>
+            </div>
+          </div>
+
+          {/* What I Help With */}
+          <div className="bg-muted/30 rounded-2xl p-8 mb-16">
+            <div className="text-center mb-8">
+              <h3 className="text-2xl font-medium text-foreground mb-4">
+                Today, I help companies:
+              </h3>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+              {[
+                "Lead and scale product teams",
+                "Launch new apps and platforms", 
+                "Automate manual workflows with AI agents",
+                "Build smarter, leaner businesses"
+              ].map((item, index) => (
+                <div key={index} className="flex items-start space-x-3">
+                  <div className="w-2 h-2 bg-primary rounded-full mt-3 flex-shrink-0"></div>
+                  <p className="text-muted-foreground">{item}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Personal Touch */}
+          <div className="text-center mb-16">
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+              Outside of work, I love finding new coffee spots, cooking, and testing the limits of my own automation stack.
             </p>
           </div>
 
-          {/* Main Content */}
-          <div className="space-y-12">
-            {/* Bio */}
-            <div className="text-center">
-              <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-                I help small and mid-sized businesses scale through smart automation. After leading product teams 
-                at Shift, Upwork, and Slickdeals, I now focus on building no-code systems that eliminate 
-                repetitive work and free teams to focus on growth.
-              </p>
+          {/* Background */}
+          <div className="bg-muted/30 rounded-2xl p-8">
+            <div className="text-center mb-8">
+              <h3 className="text-2xl font-medium text-foreground mb-4">
+                Previous Experience
+              </h3>
             </div>
 
-            {/* Approach */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
-              <div className="text-center space-y-4">
-                <div className="w-16 h-16 bg-sage/10 rounded-2xl mx-auto flex items-center justify-center">
-                  <Workflow className="w-8 h-8 text-sage" />
-                </div>
-                <h3 className="text-lg font-medium text-foreground">Automate Everything</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">
-                  If it's repetitive, it should be automated. I build systems that work while you sleep.
-                </p>
-              </div>
-              
-              <div className="text-center space-y-4">
-                <div className="w-16 h-16 bg-sage/10 rounded-2xl mx-auto flex items-center justify-center">
-                  <Target className="w-8 h-8 text-sage" />
-                </div>
-                <h3 className="text-lg font-medium text-foreground">Results First</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">
-                  No buzzwords or overcomplicated solutions. Focus on what actually moves your business forward.
-                </p>
-              </div>
-              
-              <div className="text-center space-y-4">
-                <div className="w-16 h-16 bg-sage/10 rounded-2xl mx-auto flex items-center justify-center">
-                  <Coffee className="w-8 h-8 text-sage" />
-                </div>
-                <h3 className="text-lg font-medium text-foreground">Keep It Simple</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">
-                  The best systems are the ones that just work. Clean, reliable, and maintainable.
-                </p>
-              </div>
-            </div>
-
-            {/* Experience Highlight */}
-            <div className="bg-card border border-border rounded-2xl p-8 mt-16">
-              <div className="text-center">
-                <h3 className="text-xl font-medium text-foreground mb-4">
-                  Product Background
-                </h3>
-                <p className="text-muted-foreground leading-relaxed mb-6">
-                  Before focusing on automation, I led product and engineering initiatives at top companies. 
-                  Shipped web and mobile platforms used by millions across marketplace, fintech, and eCommerce verticals.
-                </p>
-                <div className="flex flex-wrap justify-center gap-6 text-sm text-muted-foreground">
-                  <span>Shift (Mobile Commerce)</span>
-                  <span>•</span>
-                  <span>Upwork (Marketplace Platform)</span>
-                  <span>•</span>
-                  <span>Slickdeals (Community & Commerce)</span>
-                </div>
-              </div>
+            {/* Company logos */}
+            <div className="flex flex-wrap justify-center items-center gap-8 opacity-60">
+              <div className="text-muted-foreground text-sm font-medium">UPWORK</div>
+              <div className="text-muted-foreground text-sm font-medium">EXPERIAN</div>
+              <div className="text-muted-foreground text-sm font-medium">TOYOTA</div>
             </div>
           </div>
         </div>

@@ -8,26 +8,22 @@ const Hero = () => {
         <div className="max-w-5xl mx-auto space-y-8">
           {/* Main Headline */}
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light text-foreground leading-tight tracking-tight">
-            I help small businesses scale through automation.
+            Build smarter. Operate leaner.
           </h1>
           
           {/* Subheadline */}
           <p className="text-xl sm:text-2xl md:text-3xl text-muted-foreground font-light max-w-4xl mx-auto leading-relaxed">
-            No-code systems that streamline operations and free your team to focus on growth.
+            Fractional product leadership and AI-driven systems to help your business scale efficiently. From intelligent automation to strategic product delivery, I help you move fast and ship with clarity.
           </p>
           
-          {/* Key Services */}
-          <div className="pt-6 pb-8">
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Airtable workflows • Zapier integrations • AI voice agents • Fractional product consulting
-            </p>
-          </div>
-          
-          {/* CTA Button */}
-          <div className="pt-4">
+          {/* CTA Buttons */}
+          <div className="pt-8 flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="text-lg px-8 py-4 h-auto">
-              Get Started
+              Book a Free Discovery Call
               <ArrowRight className="ml-3 w-5 h-5" />
+            </Button>
+            <Button variant="outline" size="lg" className="text-lg px-8 py-4 h-auto">
+              See Services
             </Button>
           </div>
         </div>

@@ -11,96 +11,41 @@ const Index = () => {
       <main>
         <Hero />
         
-        {/* Services Preview */}
+        {/* Fractional Product Leadership */}
         <section className="py-20 md:py-32">
           <div className="container mx-auto px-4">
-            <div className="max-w-6xl mx-auto">
-              <div className="text-center mb-16">
-                <h2 className="text-3xl md:text-4xl font-light text-foreground mb-6">
-                  Two Ways I Help Businesses Scale
-                </h2>
-                <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                  Automation systems that eliminate manual work and strategic consulting 
-                  for complex product challenges.
-                </p>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+              <div className="space-y-8">
+                <div className="space-y-4">
+                  <h2 className="text-3xl md:text-4xl font-light text-foreground">
+                    Product leadership without the overhead
+                  </h2>
+                  <p className="text-lg text-muted-foreground leading-relaxed">
+                    I help startups and growing teams align roadmaps, execution, and outcomes. Whether you're building a mobile app, web platform, or AI-powered product, I bring clarity, speed, and experience to your product delivery.
+                  </p>
+                </div>
+                
+                <Button className="text-base">
+                  Learn More
+                  <ArrowRight className="ml-2 w-4 h-4" />
+                </Button>
               </div>
 
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                {/* Primary Service - Automation */}
-                <div className="bg-gradient-warm rounded-2xl p-8 md:p-12">
-                  <div className="space-y-6">
-                    <div className="w-16 h-16 bg-sage/10 rounded-2xl flex items-center justify-center">
-                      <Zap className="w-8 h-8 text-sage" />
-                    </div>
-                    
-                    <h3 className="text-2xl md:text-3xl font-medium text-foreground">
-                      Automation Systems
-                    </h3>
-                    
-                    <p className="text-muted-foreground leading-relaxed">
-                      Complete no-code solutions built on Airtable, Zapier, and AI voice agents. 
-                      Eliminate repetitive tasks and free your team to focus on growth.
-                    </p>
-                    
-                    <div className="space-y-3 pt-4">
-                      <div className="flex items-center space-x-3">
-                        <div className="w-2 h-2 bg-sage rounded-full flex-shrink-0" />
-                        <span className="text-muted-foreground text-sm">Client onboarding automation</span>
-                      </div>
-                      <div className="flex items-center space-x-3">
-                        <div className="w-2 h-2 bg-sage rounded-full flex-shrink-0" />
-                        <span className="text-muted-foreground text-sm">AI call agents and routing</span>
-                      </div>
-                      <div className="flex items-center space-x-3">
-                        <div className="w-2 h-2 bg-sage rounded-full flex-shrink-0" />
-                        <span className="text-muted-foreground text-sm">Custom CRM and dashboards</span>
-                      </div>
-                    </div>
-                    
-                    <Button variant="secondary" className="mt-6">
-                      Learn About Automation
-                      <ArrowRight className="ml-2 w-4 h-4" />
-                    </Button>
-                  </div>
+              {/* AI-Powered Business Systems */}
+              <div className="space-y-8">
+                <div className="space-y-4">
+                  <h2 className="text-3xl md:text-4xl font-light text-foreground">
+                    Automate the tedious. Scale the meaningful.
+                  </h2>
+                  <p className="text-lg text-muted-foreground leading-relaxed">
+                    I design and implement AI-driven workflows that handle lead capture, appointment scheduling, customer follow-ups, and more. These agents act like real team members, helping you reduce busywork and focus on what matters.
+                  </p>
                 </div>
 
-                {/* Secondary Service - Consulting */}
-                <div className="bg-card border border-border rounded-2xl p-8 md:p-12">
-                  <div className="space-y-6">
-                    <div className="w-16 h-16 bg-sage/10 rounded-2xl flex items-center justify-center">
-                      <BarChart3 className="w-8 h-8 text-sage" />
-                    </div>
-                    
-                    <h3 className="text-2xl md:text-3xl font-medium text-foreground">
-                      Product Consulting
-                    </h3>
-                    
-                    <p className="text-muted-foreground leading-relaxed">
-                      Fractional product leadership for web and mobile platforms. Strategic guidance 
-                      backed by experience shipping at Upwork, Shift, and Slickdeals.
-                    </p>
-                    
-                    <div className="space-y-3 pt-4">
-                      <div className="flex items-center space-x-3">
-                        <div className="w-2 h-2 bg-sage rounded-full flex-shrink-0" />
-                        <span className="text-muted-foreground text-sm">Product strategy and roadmaps</span>
-                      </div>
-                      <div className="flex items-center space-x-3">
-                        <div className="w-2 h-2 bg-sage rounded-full flex-shrink-0" />
-                        <span className="text-muted-foreground text-sm">Mobile and web platform leadership</span>
-                      </div>
-                      <div className="flex items-center space-x-3">
-                        <div className="w-2 h-2 bg-sage rounded-full flex-shrink-0" />
-                        <span className="text-muted-foreground text-sm">Team guidance through key milestones</span>
-                      </div>
-                    </div>
-                    
-                    <Button variant="outline" className="mt-6">
-                      View Consulting Services
-                      <ArrowRight className="ml-2 w-4 h-4" />
-                    </Button>
-                  </div>
-                </div>
+                <Button className="text-base">
+                  View Services
+                  <ArrowRight className="ml-2 w-4 h-4" />
+                </Button>
               </div>
             </div>
           </div>
