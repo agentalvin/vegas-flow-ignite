@@ -18,10 +18,10 @@ const Index = () => {
               <div className="space-y-8">
                 <div className="space-y-4">
                   <h2 className="text-3xl md:text-4xl font-light text-foreground">
-                    Product leadership that ships
+                    Product leadership without the overhead
                   </h2>
                   <p className="text-lg text-muted-foreground leading-relaxed">
-                    Most consultants give you strategies. I give you working products. I bring 10+ years of product experience from companies like Upwork, Shift Technologies, and Experian to turn ideas into systems that perform. I'll work with your existing team or help you build the right one.
+                    I help startups and growing teams align roadmaps, execution, and outcomes. Whether you're building a mobile app, web platform, or AI-powered product, I bring clarity, speed, and experience to your product delivery.
                   </p>
                 </div>
                 
@@ -31,14 +31,14 @@ const Index = () => {
                 </Button>
               </div>
 
-              {/* AI Automation & Digital Presence */}
+              {/* AI-Powered Business Systems */}
               <div className="space-y-8">
                 <div className="space-y-4">
                   <h2 className="text-3xl md:text-4xl font-light text-foreground">
-                    Complete digital systems that work while you sleep
+                    Automate the tedious. Scale the meaningful.
                   </h2>
                   <p className="text-lg text-muted-foreground leading-relaxed">
-                    Custom AI agents, high-converting websites, and integrated systems that capture leads, nurture prospects, and handle communications around the clock. Built with elite designers and engineers who create digital experiences that drive real business results.
+                    I design and implement AI-driven workflows that handle lead capture, appointment scheduling, customer follow-ups, and more. These agents act like real team members, helping you reduce busywork and focus on what matters.
                   </p>
                 </div>
 
@@ -79,13 +79,14 @@ const Index = () => {
           <div className="container mx-auto px-4 text-center">
             <div className="max-w-3xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-light text-foreground mb-6">
-                Ready to ship faster? Let's talk.
+                Ready to scale your operations?
               </h2>
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                Get execution-focused product leadership and intelligent automation systems that deliver real results.
+                Most automation systems pay for themselves within 3 months. Let's discuss what's 
+                slowing down your team and build something that works.
               </p>
               <Button size="lg" className="text-lg px-8 py-4 h-auto">
-                Schedule a consultation
+                Let's Talk
                 <ArrowRight className="ml-3 w-5 h-5" />
               </Button>
             </div>

@@ -8,23 +8,18 @@ const Hero = () => {
         <div className="max-w-5xl mx-auto space-y-8">
           {/* Main Headline */}
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light text-foreground leading-tight tracking-tight">
-            Ship faster without the full-time overhead
+            Build smarter. Operate leaner.
           </h1>
           
           {/* Subheadline */}
           <p className="text-xl sm:text-2xl md:text-3xl text-muted-foreground font-light max-w-4xl mx-auto leading-relaxed">
-            Fractional product consulting and AI automation for businesses that need execution, not excuses.
-          </p>
-
-          {/* Description */}
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            I build award-winning platforms, launch AI-powered products, and create systems that scale. Senior product leadership and intelligent automation without the overhead, backed by a team that's built recognized, best-in-class websites and apps.
+            Fractional product leadership and AI-driven systems to help your business scale efficiently. From intelligent automation to strategic product delivery, I help you move fast and ship with clarity.
           </p>
           
           {/* CTA Buttons */}
           <div className="pt-8 flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="text-lg px-8 py-4 h-auto">
-              Schedule a consultation
+              Book a Free Discovery Call
               <ArrowRight className="ml-3 w-5 h-5" />
             </Button>
             <Button variant="outline" size="lg" className="text-lg px-8 py-4 h-auto">
