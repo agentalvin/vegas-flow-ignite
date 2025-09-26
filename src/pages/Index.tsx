@@ -11,111 +11,69 @@ const Index = () => {
       <main>
         <Hero />
         
-        {/* Services Section */}
+        {/* Services Preview */}
         <section className="py-20 md:py-32">
           <div className="container mx-auto px-4">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-              {/* Service 1: Fractional Product Consulting */}
-              <div className="space-y-8">
-                <div className="space-y-4">
-                  <h2 className="text-3xl md:text-4xl font-light text-foreground">
-                    Product leadership that ships
-                  </h2>
-                  <p className="text-lg text-muted-foreground leading-relaxed">
-                    Most consultants give you strategies. I give you working products. I bring 10+ years of product experience from companies like Upwork, Shift Technologies, and Experian to turn ideas into systems that perform. I'll work with your existing team or help you build the right one.
-                  </p>
-                </div>
-                
-                <div className="space-y-3">
-                  {[
-                    "Product Strategy That Ships - Roadmaps built for execution",
-                    "Full-Stack Architecture - Backend systems, APIs, and databases designed to scale", 
-                    "AI Integration - LLMs and intelligent agents woven into your product",
-                    "Cross-Platform Delivery - Ship on iOS, Android, and web with speed and quality",
-                    "Team Leadership - Work with your developers or help you build the right team"
-                  ].map((item, index) => (
-                    <div key={index} className="flex items-start space-x-3">
-                      <div className="w-2 h-2 bg-primary rounded-full mt-3 flex-shrink-0"></div>
-                      <p className="text-sm text-muted-foreground">{item}</p>
-                    </div>
-                  ))}
-                </div>
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-light text-foreground mb-6">
+                Two ways I help businesses ship faster
+              </h2>
+              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                Fractional product leadership and intelligent automation systems designed for execution.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+              <div className="bg-muted/30 rounded-2xl p-8 space-y-4">
+                <h3 className="text-2xl font-medium text-foreground">
+                  Product Leadership
+                </h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  Senior product leadership that ships. Strategy, execution, and team leadership from concept to scale.
+                </p>
+                <Button variant="outline" className="mt-4">
+                  Learn More
+                  <ArrowRight className="ml-2 w-4 h-4" />
+                </Button>
               </div>
 
-              {/* Service 2: AI Automation & Digital Presence */}
-              <div className="space-y-8">
-                <div className="space-y-4">
-                  <h2 className="text-3xl md:text-4xl font-light text-foreground">
-                    Complete digital systems that work while you sleep
-                  </h2>
-                  <p className="text-lg text-muted-foreground leading-relaxed">
-                    Custom AI agents, high-converting websites, and integrated systems that capture leads, nurture prospects, and handle communications around the clock. Built with elite designers and engineers who create digital experiences that drive real business results.
-                  </p>
-                </div>
-
-                <div className="space-y-3">
-                  {[
-                    "Custom AI Agents - Built for your processes, trained on your data",
-                    "High-Converting Websites - Professional sites that turn visitors into customers",
-                    "Lead Generation Systems - Capture, qualify, and nurture prospects automatically", 
-                    "Customer Communications - Follow-ups and support that run themselves",
-                    "Integrated Digital Presence - Everything works together seamlessly"
-                  ].map((item, index) => (
-                    <div key={index} className="flex items-start space-x-3">
-                      <div className="w-2 h-2 bg-primary rounded-full mt-3 flex-shrink-0"></div>
-                      <p className="text-sm text-muted-foreground">{item}</p>
-                    </div>
-                  ))}
-                </div>
+              <div className="bg-muted/30 rounded-2xl p-8 space-y-4">
+                <h3 className="text-2xl font-medium text-foreground">
+                  AI Automation
+                </h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  Complete digital systems that work around the clock. Custom AI agents and high-converting websites.
+                </p>
+                <Button variant="outline" className="mt-4">
+                  Learn More
+                  <ArrowRight className="ml-2 w-4 h-4" />
+                </Button>
               </div>
             </div>
           </div>
         </section>
 
-        {/* About Section */}
+        {/* About Preview */}
         <section className="py-20 md:py-32 bg-muted/30">
           <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto">
-              <div className="text-center mb-12">
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-light text-foreground mb-8">
-                  10+ years turning product vision into reality
-                </h2>
-                <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-                  I'm Alvin Lee, a data-driven product leader with over 10 years of experience building solutions across marketplaces, fintech, e-commerce, and automotive. I've held senior product roles at companies like Upwork, Shift Technologies, and Experian, leading AI-powered initiatives and scaling products from concept to millions of users.
-                </p>
+            <div className="max-w-4xl mx-auto text-center">
+              <h2 className="text-3xl md:text-4xl font-light text-foreground mb-6">
+                10+ years turning product vision into reality
+              </h2>
+              <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto mb-8">
+                I'm Alvin Lee, a data-driven product leader with experience at companies like Upwork, Shift Technologies, and Experian. I specialize in AI-powered products and scaling from concept to millions of users.
+              </p>
+              
+              <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 opacity-60 mb-8">
+                <span className="text-sm font-medium text-muted-foreground">Upwork</span>
+                <span className="text-sm font-medium text-muted-foreground">Shift</span>
+                <span className="text-sm font-medium text-muted-foreground">Experian</span>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-                {[
-                  { title: "AI-First Development", desc: "I architect intelligent systems that improve personalization and reduce friction through meaningful automation" },
-                  { title: "Full-Stack Leadership", desc: "From strategy to delivery, I handle everything: backend systems, mobile apps, and the teams that build them" },
-                  { title: "Proven Scale", desc: "Products from concept to millions of users across marketplaces, mobile apps, and SaaS platforms" },
-                  { title: "Elite Network", desc: "Access to top designers and engineers who've built recognized, best-in-class products" }
-                ].map((item, index) => (
-                  <div key={index} className="space-y-2">
-                    <h3 className="text-base font-medium text-foreground">{item.title}</h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed">{item.desc}</p>
-                  </div>
-                ))}
-              </div>
-
-              {/* Company Experience */}
-              <div className="text-center">
-                <p className="text-muted-foreground text-sm mb-6">
-                  Product leadership experience at companies you know
-                </p>
-                <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 opacity-60">
-                  <div className="flex items-center justify-center h-12 w-24 bg-muted rounded-lg">
-                    <span className="text-sm font-medium text-muted-foreground">Upwork</span>
-                  </div>
-                  <div className="flex items-center justify-center h-12 w-24 bg-muted rounded-lg">
-                    <span className="text-sm font-medium text-muted-foreground">Shift</span>
-                  </div>
-                  <div className="flex items-center justify-center h-12 w-24 bg-muted rounded-lg">
-                    <span className="text-sm font-medium text-muted-foreground">Experian</span>
-                  </div>
-                </div>
-              </div>
+              <Button variant="outline">
+                Learn More About Alvin
+                <ArrowRight className="ml-2 w-4 h-4" />
+              </Button>
             </div>
           </div>
         </section>
